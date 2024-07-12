@@ -134,8 +134,27 @@
 }
 
 .slick-dots {
-    display: none;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    column-gap: 15px;
 }
+
+.slick-dots button { 
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slick-active button { 
+    background-color: green;
+}
+
 
 .slick-prev {
     left: -50px;
