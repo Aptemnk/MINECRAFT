@@ -132,6 +132,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
 }
 
 .slider__image {
@@ -270,6 +272,15 @@
         flex-direction: column;
         row-gap: 10px;
     }
+    .slick-arrow {
+        display: none !important;
+    }
+    .slider__text{
+        font-size: 16px;
+    }
+    .slider {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -281,3 +292,4 @@
         font-weight: 600;
     }
 }
+
