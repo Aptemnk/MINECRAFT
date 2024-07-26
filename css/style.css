@@ -91,11 +91,19 @@
     display: inline;
 }
 
+.about-game__content {
+    position: relative;
+    height: 70vh;
+}
+
 /*========= slider ============*/
 .slider {
     width: 80%;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
 
 .slick-list{
@@ -108,43 +116,29 @@
 }
 
 .slider__slide {
-    min-height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 300px;
+    position: relative;
 }
 
-.slider__slide:hover {
-    
+.slider__slide:hover .slider__image {
+    transform: scale(0.9);
 }
 
 .slider__text {
     font-size: 24px;
     font-weight: 600;
     text-shadow: 3px 3px 3px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.slider__slide--first {
-    background-image: url(../img/m1.jpg);
-}
-
-.slider__slide--second {
-    background-image: url(../img/m5.png);
-}
-
-.slider__slide--third {
-    background-image: url(../img/m2.jpg);
-}
-
-.slider__slide--fourth {
-    background-image: url(../img/m3.jpeg)
-}
-
-.slider__slide--fifth {
-    background-image: url(../img/m4.jpg);
+.slider__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
 }
 
 .slick-arrow {
@@ -209,7 +203,7 @@
 /* ==============footer============ */
 
 .footer{
-    padding: 100px;
+
 }
 
 .footer__content {
