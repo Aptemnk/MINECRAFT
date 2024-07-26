@@ -91,11 +91,121 @@
     display: inline;
 }
 
+.about-game__content {
+    position: relative;
+    height: 70vh;
+}
+
+/*========= slider ============*/
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    column-gap: 10px;
+}
+
+.slider__slide {
+    height: 300px;
+    position: relative;
+}
+
+.slider__slide:hover .slider__image {
+    transform: scale(0.9);
+}
+
+.slider__text {
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    text-align: center;
+}
+
+.slider__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.slick-arrow {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-arrow__icon {
+    fill: #fff;
+}
+
+.slick-arrow svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slick-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    column-gap: 15px;
+}
+
+.slick-dots button { 
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.slick-active button { 
+    background-color: green;
+}
+
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-next {
+    right: -50px;
+}
+
+.slider__slide {
+
+}
+
+
+
+
 /* ==============footer============ */
 
-.footer {
-    
-    
+.footer{
+
 }
 
 .footer__content {
@@ -148,6 +258,7 @@
 	width: 95%;
 }
 
+
 /* ===adaptive==== */
 @media (max-width: 768px) {
     .another-link-page {
@@ -161,6 +272,15 @@
         flex-direction: column;
         row-gap: 10px;
     }
+    .slick-arrow {
+        display: none !important;
+    }
+    .slider__text{
+        font-size: 16px;
+    }
+    .slider {
+        width: 100%;
+    }
 }
 
 @media (max-width: 425px) {
@@ -172,3 +292,4 @@
         font-weight: 600;
     }
 }
+
