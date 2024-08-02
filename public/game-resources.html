@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft | Home Page</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./img/favicon/favicon.png" type="image/x-icon">
-</head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Minecraft | Game Resources</title>
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="shortcut icon" href="../img/favicon/favicon.png" type="image/x-icon">
+    </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="minecrafIcon" viewBox="0 0 48 48">
@@ -43,23 +43,23 @@
                     <nav class="menu">
                         <ul class="external-link-list">
                             <li class="external-link-list__item">
-                                <a href="" class="logo">
-                                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                                <a href="../index.html" class="logo">
+                                    <img src="../img/logo.png" alt="logo" class="logo__img">
                                 </a>
                             </li>
                             <li class="external-link-list__item">
                                 <ul class="internal-link-list">
                                     <li class="internal-link-list__item">
-                                        <a href="./public/about-game.html" class="another-link-page">
-                                            <img src="./img/header/durn.png" alt="icon-durn" class="another-link-page__picture">
+                                        <a href="./about-game.html" class="another-link-page">
+                                            <img src="../img/header/durn.png" alt="icon-durn" class="another-link-page__picture">
                                             <span class="another-link-page__title">
                                                 Про игру
                                             </span>
                                         </a>
                                     </li>
                                     <li class="internal-link-list__item">
-                                        <a href="./public/game-resources.html" class="another-link-page">
-                                            <img src="./img/header/cheast.png" alt="icon-cheast" class="another-link-page__picture">
+                                        <a href="./game-resources.html" class="another-link-page">
+                                            <img src="../img/header/cheast.png" alt="icon-cheast" class="another-link-page__picture">
                                             <span class="another-link-page__title">
                                                 Игровые ресурсы
                                             </span>
@@ -74,17 +74,22 @@
         </section>
     </header>
     <main class="main">
-        <section class="base-description">
+        <section class="game-resources">
             <div class="container">
-                <div class="base-description__content">
-                    <article class="base-description__preview">
-                        <h1 class="main-title">
-                            minecraft
-                        </h1>
-                        <p class="base-description__text">
-                            - компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его студией Mojang AB.
-                        </p>
-                    </article>
+                <div class="game-resources__content">
+                    <ul class="card-list">
+                        <li class="card-list__item">
+                            <article class="card-resource">
+                                <img src="../img/resources/images.jpeg" alt="." class="card-resource__picture">
+                                <div class="card-resource__discription">
+                                    <p class="card-resource__title">
+                                        Заголовок
+                                    </p>
+                                    <a href="" class="card-resource__link">Смотреть</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -93,8 +98,8 @@
         <hr class="footer__border-line">
         <div class="container">
             <div class="footer__content">
-                <a href="" class="logo">
-                    <img src="./img/logo.png" alt="logo" class="logo__img">
+                <a href="../index.html" class="logo">
+                    <img src="../img/logo.png" alt="logo" class="logo__img">
                 </a>
                 <ul class="social-list">
                     <li class="social-list__item">
