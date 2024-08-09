@@ -357,5 +357,9 @@
         font-size: 18px;
         font-weight: 600;
     }
+    .card-resource {
+        width: 290px;
+        height: 400px;
+    }
 }
 
