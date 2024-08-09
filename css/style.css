@@ -199,7 +199,73 @@
 
 }
 
+/* resource */
 
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card-resource {
+    width: 350px;
+    height: 450px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-resource:hover .card-resource__picture {
+    transform: scale(1.1);
+    
+}
+
+.card-resource:hover .card-resource__discription {
+    backdrop-filter: blur(0px);
+
+}
+
+.card-resource__picture {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.card-resource__discription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000067;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    transition: 1s;
+}
+
+.card-resource__link {
+    background-color: green;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card-resource__link:hover {
+    opacity: 0.9;
+}
+
+.card-resource__title {
+    font-size: 32px;
+    font-weight: 600;
+}
 
 
 /* ==============footer============ */
@@ -231,7 +297,7 @@
 @media (hover:hover) {
     .social-link:hover .social-link__icon--minecraft {
         fill: green;
-    }
+    }                                                                                  
 
 
     .social-link:hover .social-link__icon--vk {
@@ -290,6 +356,10 @@
     .base-description__text {
         font-size: 18px;
         font-weight: 600;
+    }
+    .card-resource {
+        width: 290px;
+        height: 400px;
     }
 }
 
