@@ -216,10 +216,21 @@
     overflow: hidden;
 }
 
+.card-resource:hover .card-resource__picture {
+    transform: scale(1.1);
+    
+}
+
+.card-resource:hover .card-resource__discription {
+    backdrop-filter: blur(0px);
+
+}
+
 .card-resource__picture {
+    display: block;
     width: 100%;
     object-fit: cover;
-
+    transition: 1s;
 }
 
 .card-resource__discription {
@@ -233,6 +244,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    transition: 1s;
 }
 
 .card-resource__link {
@@ -242,6 +256,10 @@
     font-size: 24px;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.card-resource__link:hover {
+    opacity: 0.9;
 }
 
 .card-resource__title {
@@ -279,7 +297,7 @@
 @media (hover:hover) {
     .social-link:hover .social-link__icon--minecraft {
         fill: green;
-    }
+    }                                                                                  
 
 
     .social-link:hover .social-link__icon--vk {
